@@ -61,15 +61,14 @@ def click_OK():
 
 question_list = []
 question_list.append(QQuestion('Какие цвета на флаге России?','Белый, Синий, Красный', 'Белый, Красный', 'Синий, Жёлтый',  'Черный, Белый, Красный'))
-question_list.append(QQuestion('Человек это', 'Человек', 'Животное', 'Типичный игрок в Доту', 'Свободный индивид общества'))
+question_list.append(QQuestion('Мизантроп это ...', 'Человек', 'Животное', 'Призрак', 'Растение'))
 question_list.append(QQuestion('Когда придумали интернет?', '1969', '1945', '2007', '1998'))
-question_list.append(QQuestion('Кто такой Эйнштейн', 'Физик', 'Хз', 'Умный чел', 'Мужик с модной прической'))
-question_list.append(QQuestion('Кто такой Жак Фреско', 'Инжинер и футуролог', 'Тот самый чел из мема', 'ладно', 'Чел с загадками и вопросами'))
+question_list.append(QQuestion('Чем занимался Эйнштейн', 'Физикой', 'Химией', 'Биологией', 'Психологией'))
+question_list.append(QQuestion('Кто такой Жак Фреско', 'Инжинер и футуролог', 'Глава ООН', 'не знаю', 'Ведущий телевикторины'))
 question_list.append(QQuestion('Когда появился первый мем', '1921', '1943', '1679', '2001'))
 question_list.append(QQuestion('Когда придумали первое пианино', '1800', '1883', '1902', '1789'))
 question_list.append(QQuestion('Когда придумали VPN', '1996', '860', '1396', '2008'))
-question_list.append(QQuestion('День рождения бутерброда', '14 марта', '33 сентября', 'Не знаю, но бутер я съем', '5 января'))
-question_list.append(QQuestion('Самый популярный покемон в России', 'Мью', 'Пикачу', 'хз не шарю', 'чармандер'))
+question_list.append(QQuestion('День рождения бутерброда', '14 марта', '33 сентября', 'Каждый день', '5 января')
 app = QApplication([])
 
 RadioGroupBox = QGroupBox('Варианты ответов')
@@ -114,8 +113,8 @@ lmm.addLayout(layoutHH1)
 layoutHH.addWidget(question)
 
 AnsGroupBox = QGroupBox('Результат теста')
-lbR = QLabel('прав ты или нет?')
-lbC = QLabel('ответ будет тут!')
+lbR = QLabel('Верно или Неверно?')
+lbC = QLabel('сейчас узнаем...')
 
 lr = QVBoxLayout()
 lr.addWidget(lbR, alignment=(Qt.AlignLeft | Qt.AlignTop))
